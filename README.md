@@ -8,8 +8,8 @@
     - [Data Types](#data-types)
     - [Type Conversion](#type-conversion)
 4. [Function](#function)
-    - [Default Argument](#default-argument)
     - [Arguments](#arguments)
+    - [lambda](#lambda)
 5. [Control Flow - If/Else](#control-flow-if/else)
 6. [Loop](#loop)
     - [While Loop](#while-loop)
@@ -84,5 +84,53 @@ set((1, 2, 3)) # Tuple -> Set
 tpl = (1, 2, 3)
 tpl_to_list = [*tpl]
 print(tpl_to_list) # Output: [1, 2, 3]
+```
+**[⬆ back to top](#table-of-contents)**
+
+# Function
+```python
+# Normal Function Defination
+def add (num1, num2):
+    return num1 + num2 
+print(add(25, 10)) # Output: 35
+
+# Set a Default Argument
+def say_hello (name, greeting="Hello"):
+    return f"{greeting}, {name}"
+print(say_hello("John", 'Hey')) # Output: Hey, John
+```
+**[⬆ back to top](#table-of-contents)**
+
+## Arguments
+```python
+# It'll be return a Tuple
+def get_nums (*nums):
+    return nums
+print(get_nums(2, 3, 4, 5, 6)) # Output: (2, 3, 4, 5, 6)
+
+# It'll be return a Dictionary
+def get_data (**data):
+    return data
+print(get_data(name='John Doe', age=20)) # Output: {'name': 'John Doe', 'age': 20}
+```
+**[⬆ back to top](#table-of-contents)**
+
+## lambda
+```python
+# lambda arguments : expression
+func1 = lambda x, y: x + y
+print(func1(1, 2)) #Output: 3
+
+func2 = lambda x, y=2: x + y
+print(func2(1)) #Output: 3
+
+func3 = lambda *args: args
+print(func3(1, 2)) #Output: (1, 2)
+
+func4 = lambda **args: args
+print(func4(name='John Doe', age=30)) #Output: {'name': 'John Doe', 'age': 30}
+
+# lmbda IIFE
+(lambda num1, num2: num1 * num2)(10, 5)
 ```
 **[⬆ back to top](#table-of-contents)**
