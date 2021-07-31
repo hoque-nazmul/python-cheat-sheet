@@ -1,6 +1,4 @@
-a = 100
-b = 200
-c = 300
+a, b, c = 100, 200, 300
 if a > b and a > c:
     print(f"{a} is biggest number!")
 elif b > a and b > c:

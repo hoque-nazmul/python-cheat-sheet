@@ -11,6 +11,7 @@
     - [Arguments](#arguments)
     - [lambda](#lambda)
 5. [Control Flow - If/Else](#control-flow-if/else)
+    - [Short Hand If...Else](#short-hand-if...else)
 6. [Loop](#loop)
     - [While Loop](#while-loop)
     - [For Loop](#for-loop)
@@ -132,5 +133,30 @@ print(func4(name='John Doe', age=30)) #Output: {'name': 'John Doe', 'age': 30}
 
 # lmbda IIFE
 (lambda num1, num2: num1 * num2)(10, 5)
+```
+**[⬆ back to top](#table-of-contents)**
+
+# Control Flow - If/Else
+```python
+a, b, c = 100, 200, 300
+if a > b and a > c:
+    print(f"{a} is biggest number!")
+elif b > a and b > c:
+    print(f"{b} is biggest number!")
+else: 
+    print(f"{c} is a biggest number!")
+
+# Output: 300 is a biggest number!
+```
+**[⬆ back to top](#table-of-contents)**
+
+## Short Hand If...Else
+```python
+# value_if_true if condition else value_if_false
+print(a) if a > b else print(b) if b > a else print(a, b) # Output: 200
+
+a, b = 100, 200
+print(f"{a} > {b} or {a} < {b}") if a > b or a < b else print(f"{a} = {b}")
+# Output: 100 > 200 or 100 < 200
 ```
 **[⬆ back to top](#table-of-contents)**
