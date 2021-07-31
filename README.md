@@ -160,3 +160,28 @@ print(f"{a} > {b} or {a} < {b}") if a > b or a < b else print(f"{a} = {b}")
 # Output: 100 > 200 or 100 < 200
 ```
 **[⬆ back to top](#table-of-contents)**
+
+# Loop
+## While Loop
+```python
+counter = 0
+while (counter <= 10):
+    counter += 1
+    if counter == 3:
+        continue
+    if counter > 5:
+        break
+    print(counter)  # Output: 1 2 4 5
+```
+**[⬆ back to top](#table-of-contents)**
+
+## For Loop
+```python
+for item in range(0, 11, 2):
+    print(item, end=' ')  # Print Even: 0 2 4 6 8 10
+
+# Create a List Using For
+li = [item for item in range(1, 5)]
+print(li) # Output: [1, 2, 3, 4]
+```
+**[⬆ back to top](#table-of-contents)**
