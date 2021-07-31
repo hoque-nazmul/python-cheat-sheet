@@ -10,8 +10,8 @@
 4. [Function](#function)
     - [Arguments](#arguments)
     - [lambda](#lambda)
-5. [Control Flow - If/Else](#control-flow-if/else)
-    - [Short Hand If...Else](#short-hand-if...else)
+5. [Control Flow](#control-flow)
+    - [Short Hand](#short-hand)
 6. [Loop](#loop)
     - [While Loop](#while-loop)
     - [For Loop](#for-loop)
@@ -136,7 +136,7 @@ print(func4(name='John Doe', age=30)) #Output: {'name': 'John Doe', 'age': 30}
 ```
 **[⬆ back to top](#table-of-contents)**
 
-# Control Flow - If/Else
+# Control Flow
 ```python
 a, b, c = 100, 200, 300
 if a > b and a > c:
@@ -150,7 +150,7 @@ else:
 ```
 **[⬆ back to top](#table-of-contents)**
 
-## Short Hand If...Else
+## Short Hand
 ```python
 # value_if_true if condition else value_if_false
 print(a) if a > b else print(b) if b > a else print(a, b) # Output: 200
