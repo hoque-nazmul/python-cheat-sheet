@@ -1,5 +1,5 @@
 # It's Iterable. Doesn't have any index to access. We can add, delete, clear & copy the item of Set. 
-# nums = {2, 3, 4, 5, 6}
+nums = {2, 3, 4, 5, 6}
 
 # # Remove the Duplicate item of List & Tuple
 # print(set((22, 23, 22, 23))) # Output: {22, 23}
@@ -28,6 +28,11 @@ b_set = {2, 4, 5, 6}
 # print(a_set ^ b_set) # Output: {1, 3, 5, 6}
 # # or
 # print(a_set.symmetric_difference(b_set)) # Output: {1, 3, 5, 6}
+
+# Set Conversion
+print(list(nums)) # Output: [2, 3, 4, 5, 6]
+print([*nums]) # Output: [2, 3, 4, 5, 6]
+print(tuple(nums)) # Output: (2, 3, 4, 5, 6)
 
 
 # # Add the Item in Last of Set

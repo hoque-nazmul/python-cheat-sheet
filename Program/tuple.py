@@ -32,6 +32,7 @@ print(type(gen)) # Output: <class 'generator'>
 # Tuple Conversion
 nums = (2, 5, 6, 3, 2, 2)
 print(list(nums)) # Output: [2, 5, 6, 3, 2, 2]
+print([*nums]) # Output: [2, 5, 6, 3, 2, 2]
 print(set(nums)) # Output: {2, 3, 5, 6}
 
 
