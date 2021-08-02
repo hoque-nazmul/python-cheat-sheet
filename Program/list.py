@@ -98,6 +98,7 @@ nums = [23, 33, 52, 65, 76, 28, 32]
 # Reverse the List Item
 # nums.reverse()
 # print(nums) # Output: [32, 28, 76, 65, 52, 33, 23]
+print(nums[::-1]) # Output: [32, 28, 76, 65, 52, 33, 23]
 
 
 # # The copy() method returns a copy of the specified list. 
@@ -109,6 +110,18 @@ nums = [23, 33, 52, 65, 76, 28, 32]
 # # Shortcut Create List
 # similar_nums = [4] * 10
 # print(similar_nums) # Output: [4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
+
+for index, value in enumerate(nums):
+    print(index, value)
+    
+# Output: 
+# 0 23
+# 1 33
+# 2 52
+# 3 65
+# 4 76
+# 5 28
+# 6 32
 
 
 
