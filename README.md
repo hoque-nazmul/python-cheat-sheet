@@ -238,12 +238,118 @@ even_nums = [num for num in nums if num % 2 == 0]
 print(even_nums) # Output: [52, 76, 28, 32]
 ```
 
-** List Conversion **
+#### List Conversion
 ```python
 li = [1, 2, 3, 4, 5]
 print(tuple(li)) # Output: (1, 2, 3, 4, 5)
 print(set(li)) # Output: {1, 2, 3, 4, 5}
 ```
 
+#### index() returns the Index of Item
+```python
+li = [32, 54, 32, 43]
+print(li.index(32)) # Output: 0
+```
+
+#### count() counts the similar list item
+```python
+li = [32, 54, 32, 43]
+print(li.count(32)) # Output: 2
+```
+
+### Insert the List Item
+```python
+# Add Item in the Last
+names = ['John', 'Doe', 'Foo', 'Bar']
+names.append('Hudson') 
+print(names) # Output: ['John', 'Doe', 'Foo', 'Bar', 'Hudson']
+```
+```python
+# Add Item in the First
+names = ['John', 'Doe', 'Foo', 'Bar']
+names.insert(0, 'Michel') 
+print(names) # Output: ['Michel', 'John', 'Doe', 'Foo', 'Bar']
+```
+```python
+# Add Item in the any position
+names = ['John', 'Doe', 'Foo', 'Bar']
+names.insert(2, 'Watson') 
+print(names) # Output: ['John', 'Doe', 'Watson', 'Foo', 'Bar']
+```
+
+### Remove Item from List
+```python 
+# Remove the last Element
+names = ['John', 'Doe', 'Foo', 'Bar']
+names.pop()
+print(names) # Output: ['John', 'Doe', 'Foo']
+```
+```python 
+# Remove any existing item passing index in pop(index)
+names = ['John', 'Doe', 'Foo', 'Bar']
+names.pop(0)
+print(names) # Output: ['Doe', 'Foo', 'Bar']
+```
+```python 
+# Remove Multiple Items
+names = ['John', 'Doe', 'Foo', 'Bar']
+del names[1:3]
+print(names) # Output: ['John', 'Bar']
+```
+```python 
+# Remove item passing Value
+names = ['John', 'Doe', 'Foo', 'Bar']
+names.remove('John')
+print(names) # Output: ['Doe', 'Foo', 'Bar']
+```
+```python 
+# Remove all items 
+names = ['John', 'Doe', 'Foo', 'Bar']
+names.clear()
+print(names) # Output: []
+```
+
+### Other Method of List
+```python
+# Sort the List Item
+nums = [23, 33, 52, 65, 76, 28, 32]
+nums.sort()
+print(nums) # Output: [23, 28, 32, 33, 52, 65, 76]
+```
+```python
+# Reverse the List Item
+nums = [23, 33, 52, 65, 76, 28, 32]
+nums.reverse()
+print(nums) # Output: [32, 28, 76, 65, 52, 33, 23]
+# or
+print(nums[::-1]) # Output: [32, 28, 76, 65, 52, 33, 23]
+```
+```python
+# copy() creates a new Instance of List. 
+nums = [23, 33, 52, 65, 76, 28, 32]
+nums2 = nums.copy()
+nums2.append(100)
+print(nums) # Outptu: [23, 33, 52, 65, 76, 28, 32]
+print(nums2) # Output: [23, 33, 52, 65, 76, 28, 32, 100]
+```
+```python
+# Shortcut Create List
+similar_nums = [4] * 10
+print(similar_nums) # Output: [4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
+```
+```python
+# print the index & value using enumerate()
+nums = [23, 33, 52, 65, 76, 28, 32]
+for index, value in enumerate(nums):
+    print(index, value)
+# Output: 
+# 0 23
+# 1 33
+# 2 52
+# 3 65
+# 4 76
+# 5 28
+# 6 32
+```
 **[⬆ back to top](#table-of-contents)**
 
