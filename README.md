@@ -23,6 +23,7 @@
 8. [File in Python](#file-in-python)
 9. [Iterators & Generators](#iterators-&-generators)
 10. [OOP](#oop)
+11. [Built-in Functions](#built-in-functions)
 
 ## Print Output
 ```python
