@@ -1,0 +1,4 @@
+Hello World
+Another Text
+Python is Awesom
+Another line added in append mode

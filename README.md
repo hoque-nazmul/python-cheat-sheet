@@ -580,3 +580,52 @@ print(person.items()) # Output: dict_items([('name', 'John Doe'), ('country', 'u
 
 **[⬆ back to top](#table-of-contents)**
 
+# File in Python
+
+#### Write in a File
+```python
+with open('hello.txt', 'w') as fp:
+    fp.write('Hello World\n')
+    fp.write('Another Text\n')
+    fp.write('Python is Awesom\n')
+```
+#### Read a File
+```python
+with open('hello.txt', 'r') as fp:
+    print(fp.read())
+# Output:
+# Hello World
+# Another Text
+# Python is Awesom
+```
+#### Loop throw the line of file using readlines()
+```python
+lines = []
+with open('hello.txt', 'r') as fp:
+    for line in fp.readlines():
+        lines.append(line)
+print(lines) 
+# Output: ['Hello World\n', 'Another Text\n', 'Python is Awesom\n']
+```
+#### Read the First Line using readline()
+```python
+with open('hello.txt', 'r') as fp:
+    print(fp.readline())
+# Output: Hello World
+```
+#### Add a new line in a Existing File using Append Mode
+```python
+with open('hello.txt', 'a') as fp:
+    fp.write('Another line added in append mode')
+
+with open('hello.txt', 'r') as fp:
+    print(fp.read())
+# Output: 
+# Hello World
+# Another Text
+# Python is Awesom
+# Another line added in append mode
+```
+
+**[⬆ back to top](#table-of-contents)**
+
