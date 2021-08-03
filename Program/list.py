@@ -1,6 +1,6 @@
 # li = [1, 2, 3, 4, 5]
 
-# # Access List Item
+# Access List Item
 # print(li[1]) # Output: 2
 # print(li[-1]) # Output: 5 (-1 return the last item)
 # print(li[1:3]) # Output: [2, 3]
@@ -20,12 +20,12 @@
 # print(first_user, seccod_user, last_user) # Output: John Doe Bar
 # print(other_users) # Output: ['Foo']
 
-# # Check the Item Existence in List
+# # Check the Existence of List Item
 # names = ['John', 'Doe', 'Foo', 'Bar']
 # print('John' in names) # Output: True
 # print('Hello' in names) # Output: False
 
-# # Print Array Item using Loop
+# # Print List Item using Loop
 # nums = [23, 33, 52, 65, 76, 28, 32]
 # for item in nums:
 #     print(item)
@@ -36,11 +36,8 @@
 
 # List Conversion
 # li = [1, 2, 3, 4, 5]
-# list_to_tpl = tuple(li)
-# print(list_to_tpl) # Output: (1, 2, 3, 4, 5)
-
-# list_to_set = set(li)
-# print(list_to_set) # Output: {1, 2, 3, 4, 5}
+# print(tuple(li)) # Output: (1, 2, 3, 4, 5)
+# print(set(li)) # Output: {1, 2, 3, 4, 5}
 
 # Insert List Item
 

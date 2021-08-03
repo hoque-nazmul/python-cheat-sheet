@@ -20,6 +20,7 @@
     - [Tuple](#tuple)
     - [Set](#set)
     - [Dictionary](#dictionary)
+8. [File in Python](#file-in-python)
 
 ## Print Output
 ```python
@@ -185,3 +186,64 @@ li = [item for item in range(1, 5)]
 print(li) # Output: [1, 2, 3, 4]
 ```
 **[⬆ back to top](#table-of-contents)**
+
+# List
+#### Access the List Item
+```python
+li = [1, 2, 3, 4, 5]
+print(li[1]) # Output: 2
+print(li[-1]) # Output: 5 (-1 return the last item)
+print(li[1:3]) # Output: [2, 3]
+```
+#### Concatenate List
+```python
+li1, li2 = [1, 2, 3], [4, 5, 6]
+li_items = li1 + li2
+print(li_items) # Output: [1, 2, 3, 4, 5, 6]
+```
+```python
+# Concatenated the 2nd List with 1st List
+li1, li2 = [1, 2, 3], [4, 5, 6]
+li1.extend(li2)
+print(li1) # Output: [1, 2, 3, 4, 5, 6]
+```
+
+#### Unpacking List
+```python
+names = ['John', 'Doe', 'Foo', 'Bar']
+first_user, seccod_user, *other_users, last_user = names
+print(first_user, seccod_user, last_user) # Output: John Doe Bar
+print(other_users) # Output: ['Foo']
+```
+
+#### Check the Existence of List Item
+```python
+names = ['John', 'Doe', 'Foo', 'Bar']
+print('John' in names) # Output: True
+print('Hello' in names) # Output: False
+```
+
+#### Print the List Item using For Loop
+```python
+nums = [23, 33, 52, 65, 76, 28, 32]
+for item in nums:
+    print(item)
+```
+
+#### List Comprehension
+```python
+nums = [23, 33, 52, 65, 76, 28, 32]
+
+even_nums = [num for num in nums if num % 2 == 0]
+print(even_nums) # Output: [52, 76, 28, 32]
+```
+
+** List Conversion **
+```python
+li = [1, 2, 3, 4, 5]
+print(tuple(li)) # Output: (1, 2, 3, 4, 5)
+print(set(li)) # Output: {1, 2, 3, 4, 5}
+```
+
+**[⬆ back to top](#table-of-contents)**
+
