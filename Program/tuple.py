@@ -16,17 +16,21 @@ print(other_users) # Output: ['Root', 'Justin']
 print(last_user) # Output: Foo
 
 # Check the Existance of Tuple Item
+users = ("Joe", "John", "Root", "Justin", "Foo")
 print('Justin' in users) # Output: True
 print('Doe' in users) # Output: False
 
 # Built-in Method of Tuple
 # Find the index of Tuple
+users = ("Joe", "John", "Root", "Justin", "Foo")
 print(users.index('John')) # Output: 1
 
 # Count the similar item of Tuple
+users = ("Joe", "John", "Root", "Justin", "Foo")
 print(users.count('Justin')) # Output: 1
 
 # Create a Generator using Tuple Comprehension
+users = ("Joe", "John", "Root", "Justin", "Foo")
 gen = (item for item in users)
 print(type(gen)) # Output: <class 'generator'>
 
