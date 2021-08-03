@@ -188,6 +188,7 @@ print(li) # Output: [1, 2, 3, 4]
 **[⬆ back to top](#table-of-contents)**
 
 # List
+>li = [1, 2, 3, 4, 5]
 #### Access the List Item
 ```python
 li = [1, 2, 3, 4, 5]
@@ -355,6 +356,7 @@ for index, value in enumerate(nums):
 
 # Tuple
 It's Iterable, we can only access the item of tuple using index or using loop. But can't assign, insert or delete any item of tuple.
+>tpl = (10, 20, 30, 40, 50, 60)
 
 #### Access the Tuple Item
 ```python
@@ -505,6 +507,75 @@ nums_1.add(100)
 # After Changing nums_1
 print(nums) # Output: {2, 3, 4, 5, 6}
 print(nums_1) # Output: {2, 3, 4, 5, 6, 100}
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+# Dictionary
+>person = { 'name': 'John Doe', 'country': 'usa', 'age': 30 }
+
+#### Access the Dictionary Item
+```python
+person = { 'name': 'John Doe', 'country': 'usa', 'age': 30 }
+print(person['name']) # Output: John Doe
+print(person['country']) # Output: usa
+print(person.get('name')) # Output: John Doe
+```
+#### Add the property in Dictionar
+```python
+person = { 'name': 'John Doe', 'country': 'usa', 'age': 30 }
+person['city'] = 'New York'
+print(person) 
+# Output: {'name': 'John Doe', 'country': 'usa', 'age': 30, 'city': 'New York'}
+```
+#### Remove the Item of Dictionary
+```python
+person = { 'name': 'John Doe', 'country': 'usa', 'age': 30 }
+person.pop('age')
+print(person) # Output: {'name': 'John Doe', 'country': 'usa'}
+```
+#### Clear the Dictionary
+```python
+person = { 'name': 'John Doe', 'country': 'usa', 'age': 30 }
+person.clear()
+print(person) # Output: {}
+```
+#### Dictionary Keys
+```python
+person = { 'name': 'John Doe', 'country': 'usa', 'age': 30 }
+print(person.keys()) # Output: dict_keys(['name', 'country', 'age'])
+```
+#### Dictionary Values
+```python
+person = { 'name': 'John Doe', 'country': 'usa', 'age': 30 }
+print(person.values()) # Output: dict_values(['John Doe', 'usa', 30])
+```
+#### Loop in Dictionary
+```python
+# Print the Keys of Dictionary
+person = { 'name': 'John Doe', 'country': 'usa', 'age': 30 }
+for key in person:
+    print (key) # Output: name country age
+# Print the Values of Dictionary
+for key in person:
+    print (person[key]) # Output: John Doe usa 30
+```
+#### Create the new Instance of a Dictionary
+```python
+person = { 'name': 'John Doe', 'country': 'usa', 'age': 30 }
+a_person = person.copy()
+# Before Changing 
+print(person) # Output: {'name': 'John Doe', 'country': 'usa', 'age': 30}
+print(a_person) # Output: {'name': 'John Doe', 'country': 'usa', 'age': 30}
+# After Changing 
+a_person['gender'] = 'Male'
+print(person) # Output: {'name': 'John Doe', 'country': 'usa', 'age': 30}
+print(a_person) # Output: {'name': 'John Doe', 'country': 'usa', 'age': 30, 'gender': 'Male'}
+```
+#### Print the Items of Dictionary
+```python
+person = { 'name': 'John Doe', 'country': 'usa', 'age': 30 }
+print(person.items()) # Output: dict_items([('name', 'John Doe'), ('country', 'usa'), ('age', 30)])
 ```
 
 **[⬆ back to top](#table-of-contents)**
