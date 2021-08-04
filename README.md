@@ -734,6 +734,16 @@ print(rc.get_area()) # Output: 20
 
 sq = Square(4, 4)
 print(sq.get_area()) # Output: 16
+
+
+#  Use of isinstance() & issubclass()
+print(isinstance(rc, Rectangle)) # True
+print(isinstance(sq, Rectangle)) # True
+print(isinstance(sq, Square)) # True
+print(isinstance(rc, Square)) # False
+
+print(issubclass(Square, Rectangle)) # True
+print(issubclass(Rectangle, Square)) # False
 ```
 #### Method Overriding
 ```python
