@@ -137,6 +137,16 @@ print(func4(name='John Doe', age=30)) #Output: {'name': 'John Doe', 'age': 30}
 ```
 
 ## Recursion
+```python
+# Factorial Program
+def factorial(num):
+    if num == 1:
+        return 1
+    else:
+        return num * factorial(num-1)
+
+print(factorial(5)) # Output: 120
+```
 
 **[⬆ back to top](#table-of-contents)**
 
