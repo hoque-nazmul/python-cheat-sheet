@@ -36,7 +36,6 @@ print(name, age)  # Output: John Doe 30
 for item in range(5):
     print(item, end=' ')  # Output: 0 1 2 3 4
 ```
-**[⬆ back to top](#table-of-contents)**
 
 ## Variable
 ```python
@@ -68,7 +67,6 @@ name, age = 'John Doe', 30
 # Type Checking Method
 type([1, 2, 3]) # Output: <class 'list'>
 ```
-**[⬆ back to top](#table-of-contents)**
 
 ### Type Conversion
 ```python
@@ -101,7 +99,6 @@ def say_hello (name, greeting="Hello"):
     return f"{greeting}, {name}"
 print(say_hello("John", 'Hey')) # Output: Hey, John
 ```
-**[⬆ back to top](#table-of-contents)**
 
 ### Arguments
 ```python
@@ -162,9 +159,8 @@ else:
 
 # Output: 300 is a biggest number!
 ```
-**[⬆ back to top](#table-of-contents)**
 
-### Short Hand if...else
+## Short Hand if...else
 ```python
 # value_if_true if condition else value_if_false
 print(a) if a > b else print(b) if b > a else print(a, b) # Output: 200
