@@ -21,7 +21,7 @@
     - [Set](#set)
     - [Dictionary](#dictionary)
 8. [File in Python](#file-in-python)
-9. [Iterators & Generators](#iterators-&-generators)
+9. [Iterators & Generators](#iterators-generators)
 10. [Error Handling](#error-handling)
 11. [OOP](#oop)
 12. [Built-in Functions](#built-in-functions)
@@ -634,6 +634,11 @@ with open('hello.txt', 'r') as fp:
 **[⬆ back to top](#table-of-contents)**
 
 # Iterators & Generators
+**Iterators**
+ <img src="Program/iterator.png"> 
+
+**Generators**
+ <img src="Program/generator.png">
 
 **[⬆ back to top](#table-of-contents)**
 
