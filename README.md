@@ -50,7 +50,7 @@ name, age = 'John Doe', 30
 ```
 **[⬆ back to top](#table-of-contents)**
 
-# Data Types and Type Conversion
+# Data Types & Type Conversion
 ### Data Types
 ```python
 # Most Used Built-in Data Types in Python
@@ -140,7 +140,7 @@ print(func4(name='John Doe', age=30)) #Output: {'name': 'John Doe', 'age': 30}
 
 **[⬆ back to top](#table-of-contents)**
 
-# Control Flow and Short Handif
+# Control Flow & Short Handif
 ```python
 a, b, c = 100, 200, 300
 if a > b and a > c:
@@ -669,7 +669,7 @@ with open('hello.txt', 'r') as fp:
 
 **[⬆ back to top](#table-of-contents)**
 
-# Iterators and Generators
+# Iterators & Generators
 **Iterators**
  <img src="Program/iterator.png"> 
 
