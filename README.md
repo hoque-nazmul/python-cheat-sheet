@@ -4,24 +4,23 @@
 
 1. [Print Output](#print-output)
 2. [Variable](#variable)
-3. [Data Types and Type Conversion](#data-types-and-type-conversion)
-4. [Control Flow and Short Handif](#control-flow-and-short-handif)
-5. [Function & it's Arguments](#function&it's-arguments)
+3. [Data Types & Type Conversion](#data-types--type-conversion)
+4. [Control Flow & Short Handif](#control-flow--short-handif)
+5. [Function & it's Arguments](#function--its-arguments)
     - [lambda](#lambda)
     - [Recursion](#recursion)
-6. [For & While Loop](#for&while-loop)
+6. [For & While Loop](#for--while-loop)
     - [Loop Exception](#loop-exception)
-7. [Python Built-in Data Structure](#python-built-in-data-structure)
-    - [List](#list)
-    - [Tuple](#tuple)
-    - [Set](#set)
-    - [Dictionary](#dictionary)
-8. [File in Python](#file-in-python)
-9. [Iterators and Generators](#iterators-and-generators)
-10. [Error Handling](#error-handling)
-11. [OOP](#oop)
-12. [Built-in Functions](#built-in-functions)
-13. [Check Program Performance](#check-program-performance)
+7. [List](#list)
+8. [Tuple](#tuple)
+9. [Set](#set)
+10. [Dictionary](#dictionary)
+11. [File in Python](#file-in-python)
+12. [Iterators & Generators](#iterators--generators)
+13. [Error Handling](#error-handling)
+14. [OOP](#oop)
+15. [Built-in Functions](#built-in-functions)
+16. [Check Program Performance](#check-program-performance)
 
 ## Print Output
 ```python
@@ -178,7 +177,6 @@ while (counter <= 10):
         break
     print(counter)  # Output: 1 2 4 5
 ```
-**[⬆ back to top](#table-of-contents)**
 
 ### For Loop
 ```python
@@ -190,7 +188,9 @@ li = [item for item in range(1, 5)]
 print(li) # Output: [1, 2, 3, 4]
 ```
 
-## Loop Exception
+**[⬆ back to top](#table-of-contents)**
+
+# Loop Exception
 **When the loop iteration is completed, then the 'StopIteration Exception' & 'else' execute.**
 ```python
 for item in range(1,4):
