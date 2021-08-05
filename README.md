@@ -4,17 +4,13 @@
 
 1. [Print Output](#print-output)
 2. [Variable](#variable)
-3. [Built-in Data Types](#built-in-data-types)
-    - [Data Types](#data-types)
-    - [Type Conversion](#type-conversion)
-4. [Function](#function)
-    - [Arguments](#arguments)
+3. [Data Types and Type Conversion](#data-types-and-type-conversion)
+4. [Control Flow and Short Handif](#control-flow-and-short-handif)
+5. [Function & it's Arguments](#function&it's-arguments)
     - [lambda](#lambda)
-5. [Control Flow](#control-flow)
-    - [Short Hand](#short-hand)
-6. [Loop](#loop)
-    - [While Loop](#while-loop)
-    - [For Loop](#for-loop)
+    - [Recursion](#recursion)
+6. [For & While Loop](#for&while-loop)
+    - [Loop Exception](#loop-exception)
 7. [Python Built-in Data Structure](#python-built-in-data-structure)
     - [List](#list)
     - [Tuple](#tuple)
@@ -25,6 +21,7 @@
 10. [Error Handling](#error-handling)
 11. [OOP](#oop)
 12. [Built-in Functions](#built-in-functions)
+13. [Check Program Performance](#check-program-performance)
 
 ## Print Output
 ```python
@@ -54,8 +51,8 @@ name, age = 'John Doe', 30
 ```
 **[⬆ back to top](#table-of-contents)**
 
-# Built-in Data Types
-## Data Types
+# Data Types and Type Conversion
+### Data Types
 ```python
 # Most Used Built-in Data Types in Python
 1. str -> 'Hey'
@@ -74,7 +71,7 @@ type([1, 2, 3]) # Output: <class 'list'>
 ```
 **[⬆ back to top](#table-of-contents)**
 
-## Type Conversion
+### Type Conversion
 ```python
 int('100') # String -> Integer
 str(100) # Integer -> String
@@ -93,7 +90,7 @@ print(tpl_to_list) # Output: [1, 2, 3]
 ```
 **[⬆ back to top](#table-of-contents)**
 
-# Function
+# Function & it's Arguments
 ```python
 # Normal Function Defination
 def add (num1, num2):
@@ -107,7 +104,7 @@ print(say_hello("John", 'Hey')) # Output: Hey, John
 ```
 **[⬆ back to top](#table-of-contents)**
 
-## Arguments
+### Arguments
 ```python
 # It'll be return a Tuple
 def get_nums (*nums):
@@ -139,9 +136,12 @@ print(func4(name='John Doe', age=30)) #Output: {'name': 'John Doe', 'age': 30}
 # lmbda IIFE
 (lambda num1, num2: num1 * num2)(10, 5)
 ```
+
+## Recursion
+
 **[⬆ back to top](#table-of-contents)**
 
-# Control Flow
+# Control Flow and Short Handif
 ```python
 a, b, c = 100, 200, 300
 if a > b and a > c:
@@ -155,7 +155,7 @@ else:
 ```
 **[⬆ back to top](#table-of-contents)**
 
-## Short Hand
+### Short Hand if...else
 ```python
 # value_if_true if condition else value_if_false
 print(a) if a > b else print(b) if b > a else print(a, b) # Output: 200
@@ -166,8 +166,8 @@ print(f"{a} > {b} or {a} < {b}") if a > b or a < b else print(f"{a} = {b}")
 ```
 **[⬆ back to top](#table-of-contents)**
 
-# Loop
-## While Loop
+# For & While Loop
+### While Loop
 ```python
 counter = 0
 while (counter <= 10):
@@ -180,7 +180,7 @@ while (counter <= 10):
 ```
 **[⬆ back to top](#table-of-contents)**
 
-## For Loop
+### For Loop
 ```python
 for item in range(0, 11, 2):
     print(item, end=' ')  # Print Even: 0 2 4 6 8 10
@@ -189,6 +189,42 @@ for item in range(0, 11, 2):
 li = [item for item in range(1, 5)]
 print(li) # Output: [1, 2, 3, 4]
 ```
+
+## Loop Exception
+**When the loop iteration is completed, then the 'StopIteration Exception' & 'else' execute.**
+```python
+for item in range(1,4):
+    print(item)
+else:
+    print('Item Finished!')
+# Output: 1 2 3
+# Item Finished!
+```
+**If the loop iteration isn't completed, 'StopIteration Exception' & 'else' won't execute.**
+```python
+for i in range(1, 5):
+    if i > 3:
+        break
+    print(i)
+else:
+    print('Iteration Complete!')
+# Output: 1 2 3
+```
+**Implementing Loop Exception logic, We can create efficient program. Such as:**
+```python
+def check_prime(num):
+    for i in range(2, num):
+        if num % i == 0:
+            print(False)
+            break
+    else:
+        print(True)
+
+# print(check_prime(17)) # True
+# print(check_prime(13)) # True
+# print(check_prime(10)) # False
+```
+
 **[⬆ back to top](#table-of-contents)**
 
 # List
@@ -1246,5 +1282,11 @@ repr()
 compile()
 complex()
 ```
+
+**[⬆ back to top](#table-of-contents)**
+
+# Check Program Performance
+
+
 
 **[⬆ back to top](#table-of-contents)**
