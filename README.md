@@ -234,7 +234,7 @@ def check_prime(num):
 **[⬆ back to top](#table-of-contents)**
 
 # List
->li = [1, 2, 3, 4, 5]
+>li = [1, 2, 3, 4, 5] (Mutable)
 #### Access the List Item
 ```python
 li = [1, 2, 3, 4, 5]
@@ -291,19 +291,6 @@ li = [1, 2, 3, 4, 5]
 print(tuple(li)) # Output: (1, 2, 3, 4, 5)
 print(set(li)) # Output: {1, 2, 3, 4, 5}
 ```
-
-#### index() returns the Index of Item
-```python
-li = [32, 54, 32, 43]
-print(li.index(32)) # Output: 0
-```
-
-#### count() counts the similar list item
-```python
-li = [32, 54, 32, 43]
-print(li.count(32)) # Output: 2
-```
-
 ### Insert the List Item
 ```python
 # Add Item in the Last
@@ -355,6 +342,17 @@ names = ['John', 'Doe', 'Foo', 'Bar']
 names.clear()
 print(names) # Output: []
 ```
+#### index() returns the Index of Item
+```python
+li = [32, 54, 32, 43]
+print(li.index(32)) # Output: 0
+```
+
+#### count() counts the similar list item
+```python
+li = [32, 54, 32, 43]
+print(li.count(32)) # Output: 2
+```
 
 ### Other Method of List
 ```python
@@ -401,7 +399,7 @@ for index, value in enumerate(nums):
 **[⬆ back to top](#table-of-contents)**
 
 # Tuple
-It's Iterable, we can only access the item of tuple using index or using loop. But can't assign, insert or delete any item of tuple.
+It's Iterable (Immutable), we can only access the item of tuple using index or using loop. But can't assign, insert or delete any item of tuple.
 >tpl = (10, 20, 30, 40, 50, 60)
 
 #### Access the Tuple Item
@@ -567,6 +565,13 @@ print(person['name']) # Output: John Doe
 print(person['country']) # Output: usa
 print(person.get('name')) # Output: John Doe
 ```
+#### Dictionary Comprehension
+```python
+nums = {x: x * x for x in range(1, 6)}
+print(nums)
+# Output: {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+```
+
 #### Add the property in Dictionar
 ```python
 person = { 'name': 'John Doe', 'country': 'usa', 'age': 30 }
@@ -596,6 +601,11 @@ print(person.keys()) # Output: dict_keys(['name', 'country', 'age'])
 person = { 'name': 'John Doe', 'country': 'usa', 'age': 30 }
 print(person.values()) # Output: dict_values(['John Doe', 'usa', 30])
 ```
+#### Print the Items of Dictionary
+```python
+person = { 'name': 'John Doe', 'country': 'usa', 'age': 30 }
+print(person.items()) # Output: dict_items([('name', 'John Doe'), ('country', 'usa'), ('age', 30)])
+```
 #### Loop in Dictionary
 ```python
 # Print the Keys of Dictionary
@@ -617,11 +627,6 @@ print(a_person) # Output: {'name': 'John Doe', 'country': 'usa', 'age': 30}
 a_person['gender'] = 'Male'
 print(person) # Output: {'name': 'John Doe', 'country': 'usa', 'age': 30}
 print(a_person) # Output: {'name': 'John Doe', 'country': 'usa', 'age': 30, 'gender': 'Male'}
-```
-#### Print the Items of Dictionary
-```python
-person = { 'name': 'John Doe', 'country': 'usa', 'age': 30 }
-print(person.items()) # Output: dict_items([('name', 'John Doe'), ('country', 'usa'), ('age', 30)])
 ```
 
 **[⬆ back to top](#table-of-contents)**
